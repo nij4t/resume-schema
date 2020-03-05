@@ -248,6 +248,11 @@
             "description": "e.g. 1989-06-12",
             "format": "date"
           },
+          "url": {
+            "type": "string",
+            "description": "e.g. http://example.com",
+            "format": "uri"
+          },
           "awarder": {
             "type": "string",
             "description": "e.g. Time Magazine"
@@ -255,6 +260,39 @@
           "summary": {
             "type": "string",
             "description": "e.g. Received for my work with Quantum Physics"
+          }
+        }
+      }
+    },
+    "certificates": {
+      "type": "array",
+      "description": "Specify any certificates you have received throughout your professional career",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "e.g. Certified Kubernetes Administrator"
+          },
+          "date": {
+            "type": "string",
+            "description": "e.g. 1989-06-12",
+            "format": "date"
+          },
+          "url": {
+            "type": "string",
+            "description": "e.g. http://example.com",
+            "format": "uri"
+          },
+          "issuer": {
+            "type": "string",
+            "description": "e.g. CNCF"
+          },
+          "summary": {
+            "type": "string",
+            "description": "e.g. The Certified Kubernetes Administrator (CKA) program provides assurance that CKAs have the skills, knowledge, and competency to perform the responsibilities of Kubernetes administrators."
           }
         }
       }
