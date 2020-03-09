@@ -1,5 +1,5 @@
 {
-  "name": "resume-schema",
+  "name": "@nij4t/resume-schema",
   "version": "0.0.18",
   "description": "JSON Resume Schema",
   "main": "validator.js",
